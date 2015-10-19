@@ -1,0 +1,2 @@
+# javascripting
+Nodeschool Javascripting Workshop

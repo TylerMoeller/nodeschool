@@ -1,0 +1,84 @@
+
+Skip to main content
+English
+French
+Chinese
+more languages
+Notepad++
+home
+download
+news
+features
+resources
+contribute
+donate
+community
+contributors
+links
+download
+
+Current Version: 6.7.9.2
+Home Resources
+Resources
+Online Help
+Notepad++ Community: Where you can get get the support and find the answers of your questions.
+Notepad++ chat room: Where you can get help on live (need GitHub access).
+NppWiki++: Notepad++ wiki.
+ 
+
+Source Code Repository Access
+Notepad++ source code repository is available on GitHub:
+
+https://github.com/donho/notepad-plus-plus.git
+
+Your pull requests will be welcome. However, they are not always accepted for diverse reasons.
+Here are the guidelines for your pull requests:
+
+Respect Notepad++ coding style.
+Avoid to commit several features in one commit.
+Make your modification compact - don't reformat source code in your request. It makes code review more difficult.
+In short: The easier the code review is, the better the chance your pull request has to get accepted
+
+ 
+
+Notepad++ ECCN
+Notepad++ is "Made in Worldwide" and distributed outside of USA territory (both source code and binary) so there shouldn't be ECCN issue. However you may need Notepad++ ECCN number to conforme to US law, here it is:
+EAR99
+
+ 
+
+Binary Translations
+From Binary Translations page you could get the language you need.
+Please refer to translate binary howto if you want to get more information.
+
+ 
+
+Plugins
+From the v3.1, Notepad++ has the extension capacity - the plugin system. Please see Plugins HOWTO to learn how to install a plugin or/and how to develop a plugin.
+
+A list of plugins is maintained on NpWiki++ and should be complete. You can use this list to add/update your plugins, but it may not be necessary - Plugin Manager plugin is included in Notepad++ release. It gets jobs done very well.
+
+If you can not find the plugin you need, just make your own.
+
+ 
+
+User Defined Language files
+For some reasons that some languages are not supported by Notepad++, User Language Define System can help you out in this case. This system allows user to define his own language : not only the syntax highlighting keywords definition, but also the syntax folding keywords definition, comment keywords definition and the operators definition.
+
+You can define your language via User Language Define Dialog. However, the language you need may be already defined by someone-else in this User Defined Language List.
+
+ 
+
+Notepad Replacement
+This is one of the most asked question in the forums. A lot of references are pointed in Make Notepad++ the Default TXT Editor page on NpWiki++.
+
+ 
+
+Notepad++ Cheat sheet
+shared by Andres Gomez Casanova:
+Word Format
+PDF Format
+
+Website kindly donated by Ecreate
+Copyright © Don Ho 2015
+HTML • CSS
