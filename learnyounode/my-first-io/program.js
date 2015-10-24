@@ -1,6 +1,8 @@
-var fs = require('fs')
+var fs = require('fs'),
+	filename = process.argv[2];
 
-var fileContents = fs.readFileSync(process.argv[2])
-var fileLines = fileContents.toString().split('\n').length - 1
+var newLines = fs.readFileSync(filename, "utf8").split('\n').length - 1;
 
-console.log(fileLines)
+console.log(newLines); // Lesson requires console.log to pass
+
+return newLines;
