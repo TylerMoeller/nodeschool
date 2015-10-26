@@ -1,6 +1,11 @@
-var express = require('express')
-var app = express()
+/*eslint-env node*/
 
-app.use(express.static(process.argv[3] || path.join(__dirname, 'public')));
+'use strict';
+var express = require('express');
+var app = express();
+var port = process.argv[2];
+var route = process.argv[3];
 
-app.listen(process.argv[2]);
+app.use(express.static(route || path.join(__dirname, "public")));
+
+app.listen(port);
