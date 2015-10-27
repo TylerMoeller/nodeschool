@@ -1,11 +1,12 @@
-var concat = require('concat-stream')
-
-var readStream = process.stdin;
-var concatStream = concat(gotText);
-
-readStream.pipe(concatStream);
+var concat = require('concat-stream'),
+    readStream = process.stdin,
+    concatStream = concat(gotText);
 
 function gotText(textBuffer) {
-	textString = textBuffer.toString();
-	console.log(textString.split("").reverse().join(""));
+  console.log(textBuffer.toString()
+                        .split('')
+                        .reverse()
+                        .join(''));
 }
+
+readStream.pipe(concatStream);
