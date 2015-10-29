@@ -26,6 +26,6 @@ Contribution for this exercise at: https://github.com/jlord/patchwork/commits?au
 <img src="https://github.com/TylerMoeller/nodeschool/blob/master/stream-adventure/nodeschool-stream-adventure.png"><br />
 _Note: Both duplexer exercises manually marked as [COMPLETED] due to [#155](https://github.com/substack/stream-adventure/issues/155)._<br />
 <hr><br />
-**how-to-npm:** https://github.com/azat-co/expressworks<br />
-<img src="https://github.com/TylerMoeller/nodeschool/blob/master/expressworks/nodeschool-expressworks.png"><br />
+**how-to-npm:** https://github.com/npm/how-to-npm<br />
+<img src="https://github.com/TylerMoeller/nodeschool/blob/master/how-to-npm/nodeschool-how-to-npm.png"><br />
 <hr><br />
