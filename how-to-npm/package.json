@@ -1,0 +1,23 @@
+{
+  "name": "@tylerm/how-to-npm",
+  "version": "1.1.0",
+  "description": "a bit of words",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerMoeller/how-to-npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TylerMoeller/how-to-npm/issues"
+  },
+  "homepage": "https://github.com/TylerMoeller/how-to-npm#readme"
+}
