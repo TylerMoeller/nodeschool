@@ -1,11 +1,16 @@
 var q = require('q'),
     defer = q.defer(),
-    invalidJSON = process.argv[2];
+    json;
 
-function parsedPromise() {
+function parsedPromised(invalidJSON) {
   try {
-    JSON.parse(invalidJSON);
+    json = JSON.parse(invalidJSON);
   } catch (e) {
-    console.log(e);
+    defer.reject(e);
   }
+
+  defer.resolve(json);
+  return defer.promise;
 }
+
+parsedPromised(process.argv[2]).then(null, console.log);

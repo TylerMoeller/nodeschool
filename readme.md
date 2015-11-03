@@ -29,3 +29,6 @@ _Note: Both duplexer exercises manually marked as [COMPLETED] due to [#155](http
 **how-to-npm:** https://github.com/npm/how-to-npm<br />
 <img src="https://github.com/TylerMoeller/nodeschool/blob/master/how-to-npm/nodeschool-how-to-npm.png"><br />
 <hr><br />
+**test-anything:** https://github.com/finnp/test-anything<br />
+<img src="https://github.com/TylerMoeller/nodeschool/blob/master/test-anything/nodeschool-test-anything.png"><br />
+<hr><br />
