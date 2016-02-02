@@ -1,4 +1,5 @@
-var express = require('express'),
+var path = require('path'),
+    express = require('express'),
     app = express();
 
 app.use(express.static(process.argv[3] || path.join(__dirname, 'public')));

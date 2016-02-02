@@ -1,8 +1,8 @@
 var q = require('q'),
-    defer = q.defer();
+    def = q.defer();
 
-defer.promise.then(null, printError);
-setTimeout(defer.reject, 300, new Error('REJECTED!'));
+def.promise.then(console.log, printError);
+setTimeout(def.reject, 300, new Error('REJECTED!'));
 
 function printError(error) {
   console.log(error.message);

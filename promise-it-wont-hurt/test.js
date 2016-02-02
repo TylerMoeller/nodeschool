@@ -1,11 +1,5 @@
 var q = require('q'),
+    fs = require('fs'),
     defer = q.defer();
 
-function countdown() {
-  for (var i = 5; i > 0; i--) {
-    console.log(i);
-    return q.all(i);
-  }
-
-  next();
-}
+var writeFile = deferred.promisify(fs.writeFile);

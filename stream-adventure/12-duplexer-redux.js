@@ -1,23 +1,18 @@
-var duplexer = require('duplexer2'),
-  through = require('through2').obj,
-  o = {},
-  input = through(write, end);
+var duplexer = require('duplexer2');
+var through = require('through2').obj;
 
 module.exports = function(counter) {
-  function write(buffer, encoding, next) {
-    if (o[buffer.country]) {
-      o[buffer.country] = o[buffer.country] + 1;
-    } else {
-      o[buffer.country] = 1;
-    }
+  var counts = {};
+  var input = through(write, end);
+  return duplexer({writableObjectMode:true}, input, counter);
 
+  function write(row, _, next) {
+    counts[row.country] = (counts[row.country] || 0) + 1;
     next();
   }
 
   function end(done) {
-    counter.setoccurrences(o);
+    counter.setCounts(counts);
     done();
   }
-
-  return duplexer(input, counter);
 };

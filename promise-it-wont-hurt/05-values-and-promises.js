@@ -1,9 +1,12 @@
-var q = require('q'),
-    defer = q.defer();
+var Q = require('q'),
+    def = Q.defer();
 
-function attachTitle(arg) {
-  return 'DR. ' + arg;
+function attachTitle(lastName) {
+  return 'DR. ' + lastName;
 }
 
-defer.promise.then(attachTitle).then(console.log);
-defer.resolve('MANHATTAN');
+def.promise
+.then(attachTitle)
+.then(console.log);
+
+def.resolve('MANHATTAN');
