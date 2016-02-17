@@ -1,0 +1,3 @@
+var HTTP = require('q-io/http');
+var json = 'http://localhost:1337'
+console.log(HTTP.read(json));

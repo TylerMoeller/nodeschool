@@ -7,7 +7,5 @@ def.promise
 
 function all(promise1, promise2) {
   var counter = 0;
-, 5
-  return Q.resolve(internalPromise);
-
+  return def(internalPromise);
 }
