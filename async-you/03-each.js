@@ -1,19 +1,18 @@
 var http = require('http'),
     async = require('async');
 
-async.each([process.argv[2], process.argv[3]], function(item, done) {
-  var req = http.get(item, function(res) {
-    res.on('data', function(chunk) {
+async.each(process.argv.slice(2), function(item, done){
+  http.get(item, function(res){
+    res.on('data', function(chunk){
     });
 
-    res.on('end', function() {
-      done(null); //only logging errors today
+    res.on('end', function(){
+      done(null);
     });
-  }).on('error', function(err) {
+  }).on('error', function(err){
     done(err);
   });
 },
-
-function done(err) {
-  if (err) console.error(err);
+function(err){
+  if(err) console.log(err);
 });
