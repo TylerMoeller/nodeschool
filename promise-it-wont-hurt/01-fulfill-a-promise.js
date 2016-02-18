@@ -1,5 +1,5 @@
 var q = require('q'),
-    defer = q.defer();
+    deferred = q.defer();
 
-defer.promise.then(console.log);
-setTimeout(defer.resolve, 300, 'RESOLVED!');
+deferred.promise.then(console.log);
+setTimeout(deferred.resolve, 300, 'RESOLVED!');
