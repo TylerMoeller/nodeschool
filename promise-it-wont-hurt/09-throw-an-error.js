@@ -1,3 +1,6 @@
+/*
+// Old solution using Q
+
 var Q = require('q'),
     def = Q.defer(),
     data;
@@ -14,3 +17,15 @@ function parsedPromised(invalidJSON) {
 }
 
 parsedPromised(process.argv[2]).then(null, console.log);
+*/
+'use strict';
+
+function parsePromised(json) {
+  return new Promise(function (fulfill, reject) {
+      fulfill(JSON.parse(json));
+      reject(new Error(error));
+    });
+};
+
+parsePromised(process.argv[2])
+.then(null, console.log);
