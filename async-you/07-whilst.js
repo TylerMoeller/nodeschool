@@ -4,18 +4,18 @@ var http = require('http'),
     count = 0;
 
 async.whilst(
-  function() {
+  function () {
     return !/meerkat/.test(text.trim());
   },
 
-  function(done) {
+  function (done) {
     var body = '';
-    http.get(process.argv[2], function(res) {
-      res.on('data', function(chunk) {
+    http.get(process.argv[2], function (res) {
+      res.on('data', function (chunk) {
         body += chunk.toString();
       });
 
-      res.on('end', function() {
+      res.on('end', function () {
         count++;
         text = body;
         done();
@@ -23,7 +23,7 @@ async.whilst(
     }).on('error', done);
   },
 
-  function(err) {
+  function (err) {
     if (err) return console.log(err);
     console.log(count);
   }
