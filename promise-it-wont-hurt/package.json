@@ -1,7 +1,6 @@
 {
   "name": "promise-it-wont-hurt",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "q": "^1.4.1"
-  }
+    "q": "^1.4.1",
+    "q-io": "^1.13.2"
+  },
+  "devDependencies": {},
+  "description": ""
 }
