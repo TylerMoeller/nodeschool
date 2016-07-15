@@ -7,9 +7,9 @@ var url1 = process.argv[2],
     url3 = process.argv[4];
 
 async.series([
-  function(callback) {
-    http.get(url1, function(response) {
-      response.pipe(bl(function(err, data) {
+  function (callback) {
+    http.get(url1, function (response) {
+      response.pipe(bl(function (err, data) {
         if (err) return console.error(err);
         data = data.toString();
         console.log(data);
@@ -18,9 +18,9 @@ async.series([
     });
   },
 
-  function(callback) {
-    http.get(url2, function(response) {
-      response.pipe(bl(function(err, data) {
+  function (callback) {
+    http.get(url2, function (response) {
+      response.pipe(bl(function (err, data) {
         if (err) return console.error(err);
         data = data.toString();
         console.log(data);
@@ -29,9 +29,9 @@ async.series([
     });
   },
 
-  function(callback) {
-    http.get(url3, function(response) {
-      response.pipe(bl(function(err, data) {
+  function (callback) {
+    http.get(url3, function (response) {
+      response.pipe(bl(function (err, data) {
         if (err) return console.error(err);
         data = data.toString();
         console.log(data);
@@ -41,6 +41,6 @@ async.series([
   },
 ],
 
-function(err, results) {
+function (err, results) {
   if (err) console.log(err);
 });
