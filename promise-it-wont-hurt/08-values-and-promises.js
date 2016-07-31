@@ -16,10 +16,10 @@ deferred.resolve('MANHATTAN');
 */
 'use strict';
 
-Promise.resolve('MANHATTAN')
-  .then(attachTitle)
-  .then(console.log);
-
 function attachTitle(lastName) {
   return 'DR. ' + lastName;
 }
+
+Promise.resolve('MANHATTAN')
+  .then(attachTitle)
+  .then(console.log);

@@ -32,3 +32,6 @@ _Note: Both duplexer exercises manually marked as [COMPLETED] due to [#155](http
 **test-anything:** https://github.com/finnp/test-anything<br />
 <img src="https://github.com/TylerMoeller/nodeschool/blob/master/test-anything/nodeschool-test-anything.png"><br />
 <hr><br />
+**promise-it-wont-hurt:** https://github.com/stevekane/promise-it-wont-hurt<br />
+<img src="https://github.com/TylerMoeller/nodeschool/blob/master/promise-it-wont-hurt/nodeschool-piwh.png"><br />
+<hr><br />

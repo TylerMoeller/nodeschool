@@ -23,9 +23,9 @@ parsedPromised(process.argv[2]).then(null, console.log);
 function parsePromised(json) {
   return new Promise(function (fulfill, reject) {
       fulfill(JSON.parse(json));
-      reject(new Error(error));
+      reject(new Error());
     });
-};
+}
 
 parsePromised(process.argv[2])
 .then(null, console.log);

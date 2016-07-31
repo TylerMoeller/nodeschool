@@ -16,6 +16,8 @@ function all(promise1, promise2) {
 
 'use strict';
 
+/* globals getPromise1, getPromise2 */
+
 function all(promise1, promise2) {
   return new Promise(function (fulfill, reject) {
     var counter = 0;

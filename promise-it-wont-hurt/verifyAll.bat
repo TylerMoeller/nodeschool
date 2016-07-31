@@ -1,0 +1,1 @@
+for /f "tokens=1* delims=-" %%I in ('dir /b *.js') do run.bat select %%I&run.bat verify %%I-%%J
