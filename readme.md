@@ -35,3 +35,6 @@ _Note: Both duplexer exercises manually marked as [COMPLETED] due to [#155](http
 **promise-it-wont-hurt:** https://github.com/stevekane/promise-it-wont-hurt<br />
 <img src="https://github.com/TylerMoeller/nodeschool/blob/master/promise-it-wont-hurt/nodeschool-piwh.png"><br />
 <hr><br />
+**elementary-electron:** https://www.github.com/maxogden/elementary-electron<br />
+<img src="https://github.com/TylerMoeller/nodeschool/blob/master/elementary-electron/elementary-electron.png"><br />
+<hr><br />
