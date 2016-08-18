@@ -38,3 +38,6 @@ _Note: Both duplexer exercises manually marked as [COMPLETED] due to [#155](http
 **elementary-electron:** https://www.github.com/maxogden/elementary-electron<br />
 <img src="https://github.com/TylerMoeller/nodeschool/blob/master/elementary-electron/elementary-electron.png"><br />
 <hr><br />
+**how-to-markdown:** https://github.com/denysdovhan/how-to-markdown<br />
+<img src="https://github.com/TylerMoeller/nodeschool/blob/master/how-to-markdown/how-to-markdown.png"><br />
+<hr><br />
