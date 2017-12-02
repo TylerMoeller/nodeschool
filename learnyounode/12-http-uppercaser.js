@@ -1,10 +1,10 @@
-var http = require('http'),
-    map = require('through2-map');
+const http = require('http');
+const map = require('through2-map');
 
-var server = http.createServer(function(req, res) {
+const server = http.createServer((req, res) => {
   if (req.method !== 'POST') return res.end('Only POSTs are allowed!\n');
 
-  req.pipe(map(function(chunk) {
+  req.pipe(map((chunk) => {
     return chunk.toString().toUpperCase();
   })).pipe(res);
 });

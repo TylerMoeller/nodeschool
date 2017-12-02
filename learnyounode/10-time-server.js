@@ -1,9 +1,10 @@
-var net = require('net');
-var strftime = require('strftime');
-var timestamp = strftime('%Y-%m-%d %H:%M');
+const net = require('net');
+const strftime = require('strftime');
 
-var server = net.createServer(function(socket) {
-  socket.end(timestamp + '\n');
+const timestamp = strftime('%Y-%m-%d %H:%M');
+
+const server = net.createServer((socket) => {
+  socket.end(`${timestamp}\n`);
 });
 
 server.listen(Number(process.argv[2]));

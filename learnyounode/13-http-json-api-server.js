@@ -1,5 +1,5 @@
-var http = require('http'),
-    url = require('url');
+const http = require('http');
+const url = require('url');
 
 function parsetime(time) {
   return {
@@ -15,11 +15,11 @@ function unixtime(time) {
   };
 }
 
-var server = http.createServer(function(req, res) {
+const server = http.createServer((req, res) => {
 
-  var data = url.parse(req.url, true),
-      time = new Date(data.query.iso),
-      result;
+  const data = url.parse(req.url, true);
+  const time = new Date(data.query.iso);
+  let result;
 
   if (req.url.indexOf('/api/parsetime') > -1) {
     result = parsetime(time);
